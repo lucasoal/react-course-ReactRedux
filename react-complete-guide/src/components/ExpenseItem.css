@@ -10,8 +10,9 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-.expense-item:hover{
+.expense-item:hover {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  width: 101%;
 }
 
 .expense-item__description {
@@ -38,11 +39,6 @@
   border: 1px solid #820ad1;
   padding: 0.5rem;
   border-radius: 50px;
-}
-
-.expense-item__price:hover{
-  background-color: #f5f5f5;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.20);
 }
 
 @media (min-width: 580px) {

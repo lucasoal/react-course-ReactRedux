@@ -31,7 +31,6 @@ function App() {
 
   return (
     <div>
-      <h2>─ · Programinha Mumicate · ─</h2>
       <Expenses items={expenses}/>
     </div>
   );

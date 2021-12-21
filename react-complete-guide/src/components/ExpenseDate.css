@@ -5,15 +5,13 @@
   height: 5.5rem;
   background-color: #820ad1;
   color: white;
-  border-radius: 12px;
+  border-radius: 6px 25px 25px 25px;
+  /* border-radius: 15px; */
   align-items: center;
   justify-content: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-.expense-date:hover{
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-}
 
 .expense-date__month {
   font-size: 0.75rem;
