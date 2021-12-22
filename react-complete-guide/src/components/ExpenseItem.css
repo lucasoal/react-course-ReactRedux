@@ -4,15 +4,12 @@
   align-items: center;
   padding: 0.5rem;
   margin: 1rem 0;
-  border-radius: 15px;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   width: 100%;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .expense-item:hover {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-  width: 101%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
 }
 
 .expense-item__description {

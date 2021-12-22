@@ -31,9 +31,16 @@ function App() {
 
   return (
     <div>
-      <Expenses items={expenses}/>
+      <Expenses items={expenses} />
     </div>
   );
+
+  // ────── · Old React · ──────
+  // return React.createElement(
+  //   'div',
+  //   {},
+  //   React.createElement(Expenses, {items: expenses})
+  // );
 }
 
 export default App;
