@@ -1,4 +1,4 @@
-import Expenses from "./components/Expenses";
+import Expenses from "./components/Expenses/Expenses";
 
 function App() {
 
@@ -35,9 +35,9 @@ function App() {
     </div>
   );
 
-  // ────── · Old React · ──────
-  // return React.createElement(
-  //   'div',
+  //? ────── · Old React · ──────
+  // return (React.createElement(
+  //  'div',
   //   {},
   //   React.createElement(Expenses, {items: expenses})
   // );
