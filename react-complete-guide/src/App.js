@@ -1,4 +1,8 @@
 import Expenses from "./components/Expenses/Expenses";
+import NewExpense from "./components/NewExpense/NewExpense";
+import Footer from "./components/UI/Footer"
+import Header from "./components/UI/Header"
+
 
 function App() {
 
@@ -31,7 +35,10 @@ function App() {
 
   return (
     <div>
+      <Header/>
+      <NewExpense/>
       <Expenses items={expenses} />
+      <Footer/>
     </div>
   );
 

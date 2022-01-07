@@ -1,0 +1,38 @@
+.new-expense__controls {
+  /* flex-wrap: wrap; */
+  /* gap: 1rem; */
+  /* text-align: left; */
+  margin-bottom: 1rem;
+  /* background-color: #F0F2F5; */
+  /* background-color: rgb(170, 201, 170); */
+}
+
+.new-expense__control label {
+  color: #2f2f2f;
+  display: block;
+  font-size: small;
+  margin-bottom: 0.5rem;
+}
+
+.new-expense__control input:focus {
+  outline-width: 0;
+  background-color: #e8f0fe;
+}
+
+.new-expense__control input {
+  color: #2f2f2f;
+  background-color: transparent;
+  font: inherit;
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 100%;
+  border: transparent;
+  border-bottom: 1px solid #7b00ce;
+  border-bottom-style: dotted;
+}
+
+.new-expense__actions {
+  text-align: center;
+  font-weight: bold;
+  font-size: small;
+}

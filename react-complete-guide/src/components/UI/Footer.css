@@ -1,0 +1,26 @@
+.Footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+
+  color: #f0f2f5;
+  background-color: #1b1b1b;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.FooterDeveloper {
+  color: #f0f2f5;
+  font-style: italic;
+}
+
+.FooterIcons {
+  margin: 0.5rem;
+}
+
+#FooterLine {
+  margin: 0.5rem;
+  height: 2.5rem;
+  border-right: 1px solid #f0f2f5;
+}
