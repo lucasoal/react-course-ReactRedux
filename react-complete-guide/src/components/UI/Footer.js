@@ -14,7 +14,7 @@ const Footer = () => {
     return (
         <div className="Footer">
             <div>
-                <a className="FooterIcons" href='https://github.com/lucasoal' target="blank">{IconGitHub}</a> <a className="FooterIcons" href='https://linkedin.com/lucasomarandradeleal' target="blank">{IconLinkedin}</a> <a className="FooterIcons" href='https://behance.net/lucasomarandradeleal' target="blank">{IconBehance}</a>
+                <a className="FooterIcons" href='https://github.com/lucasoal' target="blank">{IconGitHub}</a> <a className="FooterIcons" href='https://linkedin.com/in/lucasomarandradeleal' target="blank">{IconLinkedin}</a> <a className="FooterIcons" href='https://behance.net/lucasomarandradeleal' target="blank">{IconBehance}</a>
             </div>
             <p className="FooterDeveloper">Developed by Lucas Omar</p>
             <p>
