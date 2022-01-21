@@ -9,40 +9,38 @@ const ExpenseForm = (props) => {
     // })
 
     const [enteredTitle, setEnteredTitle] = useState('');
-    const [enteredAmount, setEnteredAmount] = useState('');
-    const [enteredDate, setEnteredDate] = useState('');
-
     const titleChangeHandler = (event) => {
         setEnteredTitle(event.target.value);
         console.log(event.target.value);
         // setUserInput({ ...userInput, enteredTitle: event.target.value })
-        //! OR
+        // OR
         // setUserInput((prevState) => {
         //     return{ ...prevState, enteredTitle: event.target.value}
         // });
-    } 
+    }
+    const [enteredAmount, setEnteredAmount] = useState('');
     const amountChangeHandler = (event) => {
         setEnteredAmount(event.target.value);
         // setUserInput({ ...userInput, enteredAmount: event.target.value })
 
     }
+    const [enteredDate, setEnteredDate] = useState('');
     const dateChangeHandler = (event) => {
         setEnteredDate(event.target.value);
         // setUserInput({ ...userInput, enteredDate: event.target.value })
     }
 
     const submitHandler = (event) => {
-        // Cancela o evento se for cancelável, sem parar a propagação do mesmo.
-        event.preventDefault();
+        // Desabilita o reaload da página caso não tenha dados para realizar um request
 
         const expenseData = {
             title: enteredTitle,
             amount: enteredAmount,
             date: new Date(enteredDate),
         }
+        console.log(expenseData)
 
         props.onSaveExpenseData(expenseData);
-        console.log(expenseData)
         setEnteredTitle = '';
         setEnteredAmount = '';
         setEnteredDate = '';
