@@ -8,6 +8,12 @@ const ExpenseForm = (props) => {
     //     enteredDate: ''
     // })
 
+    /*
+    - useState é definido como '' por default
+    - a constante enteredTitle se trata do dado que foi introduzido, enquanto o
+    setEnteredTitle será a variável de atribuição
+    - o titleChangeHandler é uma variável que irá capturar o value e definir como novo title
+    */
     const [enteredTitle, setEnteredTitle] = useState('');
     const titleChangeHandler = (event) => {
         setEnteredTitle(event.target.value);
@@ -30,9 +36,12 @@ const ExpenseForm = (props) => {
         // setUserInput({ ...userInput, enteredDate: event.target.value })
     }
 
+    // Função para validar as informações quando o formulário for submetido
     const submitHandler = (event) => {
         // Desabilita o reaload da página caso não tenha dados para realizar um request
-
+        event.preventDefault();
+        
+        // Definição dos valores das variáveis
         const expenseData = {
             title: enteredTitle,
             amount: enteredAmount,
@@ -41,9 +50,10 @@ const ExpenseForm = (props) => {
         console.log(expenseData)
 
         props.onSaveExpenseData(expenseData);
-        setEnteredTitle = '';
-        setEnteredAmount = '';
-        setEnteredDate = '';
+        // Limpa o formulário quando for submetido os dados
+        setEnteredTitle('');
+        setEnteredAmount('');
+        setEnteredDate('');
     }
 
 
