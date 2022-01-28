@@ -6,10 +6,20 @@
   margin: 1rem 0;
   background-color: #f2f2f2;
   width: 100%;
+  
+  transition: 0.5s;
+  transform: scale(1);
+
+  min-width: 50%;
+
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 .expense-item:hover {
-  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7); */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
+  transform: scale(1.01)
 }
 
 .expense-item__description {

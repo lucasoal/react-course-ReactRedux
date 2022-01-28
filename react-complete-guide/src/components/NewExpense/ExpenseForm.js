@@ -17,7 +17,7 @@ const ExpenseForm = (props) => {
     const [enteredTitle, setEnteredTitle] = useState('');
     const titleChangeHandler = (event) => {
         setEnteredTitle(event.target.value);
-        console.log(event.target.value);
+        // console.log(event.target.value);
         // setUserInput({ ...userInput, enteredTitle: event.target.value })
         // OR
         // setUserInput((prevState) => {
@@ -41,15 +41,15 @@ const ExpenseForm = (props) => {
         // Desabilita o reaload da página caso não tenha dados para realizar um request
         event.preventDefault();
         
-        // Definição dos valores das variáveis
+        // Definição dos valores das variáveis com os valores que foram inseridos no formulário
         const expenseData = {
             title: enteredTitle,
             amount: enteredAmount,
             date: new Date(enteredDate),
         }
-        console.log(expenseData)
 
         props.onSaveExpenseData(expenseData);
+        
         // Limpa o formulário quando for submetido os dados
         setEnteredTitle('');
         setEnteredAmount('');

@@ -21,6 +21,9 @@
   color: #820ad1;
   border-radius: 12px;
   margin-right: 1rem;
+  
+  transition: 0.5s;
+  transform: scale(1);
 }
 
 .new-expense button:hover,
@@ -28,6 +31,10 @@
   background-color: #ab4bea;
   border-color: #f2f2f2;
   color: #f2f2f2;
+  
+  /* transition: 0.5s;
+  transform: scale(1.02);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
 }
 
 .new-expense button.alternative {
