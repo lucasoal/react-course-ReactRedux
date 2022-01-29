@@ -1,8 +1,8 @@
 import Expenses from "./components/Expenses/Expenses";
 import NewExpense from "./components/NewExpense/NewExpense";
-import Footer from "./components/UI/Footer"
-import Header from "./components/UI/Header"
-
+import Footer from "./components/UI/Footer";
+import Header from "./components/UI/Header";
+import Graph from "./components/Graph/Graph"
 
 function App() {
 
@@ -23,13 +23,13 @@ function App() {
       id: 'e3',
       title: 'Car Insurance',
       amount: 294.67,
-      date: new Date(2021, 2, 28),
+      date: new Date(2018, 2, 28),
     },
     {
       id: 'e4',
       title: 'New Desk (Wooden)',
       amount: 450.12,
-      date: new Date(2021, 5, 12),
+      date: new Date(2004, 5, 12),
     }
   ];
 
@@ -40,10 +40,11 @@ function App() {
 
   return (
     <div>
-      <Header/>
-      <NewExpense onAddExpense={addExpenseHandler}/>
+      <Header />
+      <NewExpense onAddExpense={addExpenseHandler} />
+      <Graph />
       <Expenses items={expenses} />
-      <Footer/>
+      <Footer />
     </div>
   );
 
