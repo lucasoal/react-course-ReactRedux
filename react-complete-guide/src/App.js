@@ -2,7 +2,6 @@ import Expenses from "./components/Expenses/Expenses";
 import NewExpense from "./components/NewExpense/NewExpense";
 import Footer from "./components/UI/Footer";
 import Header from "./components/UI/Header";
-import Graph from "./components/Graph/Graph"
 
 function App() {
 
@@ -42,7 +41,6 @@ function App() {
     <div>
       <Header />
       <NewExpense onAddExpense={addExpenseHandler} />
-      <Graph />
       <Expenses items={expenses} />
       <Footer />
     </div>

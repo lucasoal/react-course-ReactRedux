@@ -6,7 +6,13 @@ function Graph() {
 
     return (
         <Card className="graph">
-            <button className="year-button">Year</button>
+            <select className="year-button">
+                <option value="default" selected>Year</option>
+                <option value="v1">2021</option>
+                <option value="v2">2020</option>
+                <option value="v3">2019</option>
+            </select>
+            <div className="month">Month</div>
             <GraphBar/>
         </Card>
     )

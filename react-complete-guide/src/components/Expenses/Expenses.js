@@ -1,10 +1,12 @@
 import ExpenseItem from './ExpenseItem'
 import './Expenses.css';
 import Card from '../UI/Card'
+import Graph from '../Graph/Graph';
 
 function Expenses(props) {
     return (
         <Card className="expenses">
+            <Graph/>
             <ExpenseItem
                 title={props.items[0].title}
                 amount={props.items[0].amount}

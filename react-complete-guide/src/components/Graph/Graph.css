@@ -1,31 +1,29 @@
 .graph {
+  /* display:flex; */
   padding: 1rem;
-  background-color: #f0f2f5;
-  margin: 2rem auto;
-  max-width: 75%;
-  min-width: 50%;
+  background-color: #1b1b1b;
+  border-radius: 5px;
+  /* margin: 2rem auto; */
+  /* max-width: 75%; */
+  /* min-width: 50%; */
 }
 
 .year-button {
   font: inherit;
   cursor: pointer;
-  border: 1px solid #6808a7;
+  border: 1px solid #2f2f2f;
   background-color: #fbfbfb;
-  color: #820ad1;
+  color: #2f2f2f;
   border-radius: 5px;
-  margin-right: 1rem;
+  /* margin-right: 1rem; */
+  /* margin-bottom: 2%; */
 
   transition: 0.5s;
   transform: scale(1);
 }
 
-.year-button:hover {
-  background-color: #ab4bea;
-  border-color: #f2f2f2;
-  color: #f2f2f2;
-  
-  /* transition: 0.5s;
-  transform: scale(1.02);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
+.month {
+  margin: 5px;
+  font-size: 0.75rem;
+  /* font-weight: bold; */
 }
-

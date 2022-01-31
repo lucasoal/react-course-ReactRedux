@@ -1,9 +1,11 @@
+import "./GraphBar.css"
+
 function GraphBar(){
     return(
         <div>
-            teste
-        <div/>
-    )
+            <div className="GraphBar"/>
+        </div>
+    );
 }
 
 export default GraphBar;
