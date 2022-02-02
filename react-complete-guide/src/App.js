@@ -3,7 +3,6 @@ import NewExpense from "./components/NewExpense/NewExpense";
 import Footer from "./components/UI/Footer"
 import Header from "./components/UI/Header"
 
-
 function App() {
 
   const expenses = [
