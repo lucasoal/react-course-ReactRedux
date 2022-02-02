@@ -6,7 +6,7 @@ import Graph from '../Graph/Graph';
 function Expenses(props) {
     return (
         <Card className="expenses">
-            <Graph/>
+            <Graph className="graph-expenses"/>
             <ExpenseItem
                 title={props.items[0].title}
                 amount={props.items[0].amount}
