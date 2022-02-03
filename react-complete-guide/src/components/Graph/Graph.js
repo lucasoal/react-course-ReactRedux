@@ -4,20 +4,17 @@ import "./Graph.css"
 
 function Graph() {
 
-    var root = document.querySelector(':root');
-
-    function setBar(){
-        // root.style.setProperty('--progress','3');
-        alert("aloww");
+    const chosenYear = (event) => {
+        alert(event.target.value);
     }
 
     return (
         <Card className="graph-expenses">
-            <select className="year-button">
-                <option value="default" selected>Year</option>
-                <option value="v1">2021</option>
-                <option value="v2">2020</option>
-                <option value="v3">2019</option>
+            <select className="year-button" onChange={chosenYear}>
+                <option value="Year">Year</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
             </select>
             <div className="progressBar-group">
                 <ProgressBar num={0} />
