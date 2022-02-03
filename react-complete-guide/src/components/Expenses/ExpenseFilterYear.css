@@ -12,12 +12,11 @@
   cursor: pointer;
 
   height: 30px;
-
   
   border: 1px solid #2f2f2f;
   background-color: #fbfbfb;
   color: #2f2f2f;
-  border-radius: 5px;
+  border-radius: 10px;
   /* margin-right: 1rem; */
   /* margin-bottom: 2%; */
 
@@ -28,5 +27,4 @@
 .progressBar-group{
   display:flex;
   justify-content: space-between;
-
 }

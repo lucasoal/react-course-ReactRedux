@@ -1,17 +1,17 @@
-import Card from '../UI/Card'
-import Graph from '../Graph/Graph';
-import ExpenseItem from './ExpenseItem'
+import Card from '../UI/Card';
+import ExpenseItem from './ExpenseItem';
+import ExpenseFilterYear from './ExpenseFilterYear';
 import './Expenses.css';
 
 const Expenses = (props) => {
 
-    const selectChosenYear = (chosen) => {
-        console.log("Expenses.js → prop = " + chosen)
+    const setSelectedYear = (selectedYear) => {
+        console.log("Expenses.js → prop = " + selectedYear)
     }
 
     return (
         <Card className="expenses">
-            <Graph className="graph-expenses" onChosenFilter={selectChosenYear}/>
+            <ExpenseFilterYear className="graph-expenses" onSelectYear={setSelectedYear}/>
             <ExpenseItem
                 title={props.items[0].title}
                 amount={props.items[0].amount}
